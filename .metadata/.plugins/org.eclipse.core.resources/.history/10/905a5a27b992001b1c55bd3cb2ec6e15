@@ -1,0 +1,10 @@
+package ejb;
+
+public class Main {
+
+	public static void Main(String[] args) {
+		InterfaceWebServiceExample interfaceWebServiceExample = new WebServiceExampleService().getWebServiceExamplePort();
+		interfaceWebServiceExample.sumar(50, 30);
+	}
+
+}

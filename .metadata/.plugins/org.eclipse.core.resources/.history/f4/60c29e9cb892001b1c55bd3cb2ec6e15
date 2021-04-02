@@ -1,0 +1,8 @@
+package ejb;
+
+public class Main {
+	
+	SumarResponse sumaResponse = new SumarResponse();
+	sumaResponse
+
+}

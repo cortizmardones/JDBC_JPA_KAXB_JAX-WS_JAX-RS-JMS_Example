@@ -1,7 +1,9 @@
 ejb\SumarResponse.class
 ejb\ObjectFactory.class
 ejb\InterfaceWebServiceExample.class
-ejb\Main.class
+ejb\ListarPersonasResponse.class
 ejb\package-info.class
+ejb\ListarPersonas.class
 ejb\Sumar.class
 ejb\WebServiceExampleService.class
+ejb\Persona.class

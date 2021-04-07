@@ -19,6 +19,7 @@
 			<attribute name="maven.artifactId" value="javaee-api"/>
 			<attribute name="maven.version" value="8.0.1"/>
 			<attribute name="maven.scope" value="compile"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>

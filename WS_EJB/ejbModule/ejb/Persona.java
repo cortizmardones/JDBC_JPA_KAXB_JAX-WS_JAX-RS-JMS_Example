@@ -70,11 +70,7 @@ public class Persona {
 	public void setIdComuna(int idComuna) {
 		this.idComuna = idComuna;
 	}
-
-	@Override
-	public String toString() {
-		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", fecha="
-				+ fecha + ", idComuna=" + idComuna + "]";
-	}
+	
+	
 	
 }

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_WIDTH" value="1268"/>
+	<item key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_HEIGHT" value="578"/>
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATION_PROPERTIES_DIALOG_SECTION">
 		<item key="DIALOG_WIDTH" value="759"/>
 		<item key="DIALOG_HEIGHT" value="702"/>

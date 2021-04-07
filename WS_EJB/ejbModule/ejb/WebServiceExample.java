@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 import javax.ejb.Stateless;
 import javax.jws.WebService;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 
 @Stateless
 @WebService(endpointInterface = "ejb.InterfaceWebServiceExample")
@@ -23,11 +25,11 @@ public class WebServiceExample implements InterfaceWebServiceExample {
 		
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_springboot","root","sasa");
-			
+			InitialContext context = new InitialContext();
+			//Este nombre lo defino en el estandalone
+			DataSource dataSource = (DataSource)context.lookup("java:jboss/datasources/ExampleMysqlDS");
+			Connection connection = dataSource.getConnection();
 			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM clientes");
-			
 			ResultSet resultSet = preparedStatement.executeQuery();
 			
 			while(resultSet.next()) {
@@ -47,5 +49,6 @@ public class WebServiceExample implements InterfaceWebServiceExample {
 		
 		return listaPersonas;
 	}
+
 	
 }

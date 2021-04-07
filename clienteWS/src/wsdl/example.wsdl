@@ -99,7 +99,7 @@
   </wsdl:binding>
   <wsdl:service name="WebServiceExampleService">
     <wsdl:port binding="tns:WebServiceExampleServiceSoapBinding" name="WebServiceExamplePort">
-      <soap:address location="http://localhost:8080/WS_EJB/WebServiceExample"/>
+      <soap:address location="http://localhost:8080/WS_SOA/WebServiceExample"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -1,4 +1,4 @@
-package ejb;
+package soap;
 
 public class Persona {
 	

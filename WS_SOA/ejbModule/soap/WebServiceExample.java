@@ -1,4 +1,4 @@
-package ejb;
+package soap;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +12,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 @Stateless
-@WebService(endpointInterface = "ejb.InterfaceWebServiceExample")
+@WebService(endpointInterface = "soap.InterfaceWebServiceExample")
 public class WebServiceExample implements InterfaceWebServiceExample {
 	
 	private ArrayList<Persona> listaPersonas = new ArrayList<Persona>();
@@ -24,6 +24,8 @@ public class WebServiceExample implements InterfaceWebServiceExample {
 	public ArrayList<Persona> listarPersonas() {
 		
 		try {
+			
+			listaPersonas.clear();
 			
 			InitialContext context = new InitialContext();
 			//Este nombre lo defino en el estandalone

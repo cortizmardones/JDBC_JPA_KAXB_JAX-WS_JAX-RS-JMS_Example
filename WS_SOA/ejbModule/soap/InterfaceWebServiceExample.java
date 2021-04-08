@@ -1,4 +1,4 @@
-package ejb;
+package soap;
 
 import java.util.ArrayList;
 import java.util.List;
